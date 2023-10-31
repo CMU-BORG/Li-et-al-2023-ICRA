@@ -1,0 +1,1 @@
+Time,Move to Pre Grasp,Move to grasp,grasp,lift after grasp,move to pre release,move to release,release,lift after release

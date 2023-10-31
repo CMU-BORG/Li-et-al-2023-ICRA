@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="GantryAssembly_URDF.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-1.7244E-16 0.017902 0.041985"
+        rpy="0 0 0" />
+      <mass
+        value="5.7776" />
+      <inertia
+        ixx="0.32319"
+        ixy="3.4335E-19"
+        ixz="-1.4897E-16"
+        iyy="0.59578"
+        iyz="6.1104E-18"
+        izz="0.27326" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GantryAssembly_URDF.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GantryAssembly_URDF.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="LeftUpright">
+    <inertial>
+      <origin
+        xyz="-0.28158 0.35631 -0.041985"
+        rpy="0 0 0" />
+      <mass
+        value="1.4886" />
+      <inertia
+        ixx="0.056019"
+        ixy="1.7816E-18"
+        ixz="1.5056E-19"
+        iyy="0.00025146"
+        iyz="2.4679E-19"
+        izz="0.056166" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GantryAssembly_URDF.SLDASM/meshes/LeftUpright.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GantryAssembly_URDF.SLDASM/meshes/LeftUpright.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LeftUprightJoint"
+    type="fixed">
+    <origin
+      xyz="0 -0.0419850000000002 0"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="LeftUpright" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="ZBar">
+    <inertial>
+      <origin
+        xyz="2.2921E-15 0.010235 -0.041985"
+        rpy="0 0 0" />
+      <mass
+        value="0.92261" />
+      <inertia
+        ixx="0.00010656"
+        ixy="-4.2485E-20"
+        ixz="3.0185E-18"
+        iyy="0.023961"
+        iyz="2.4839E-21"
+        izz="0.023919" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GantryAssembly_URDF.SLDASM/meshes/ZBar.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89412 0.91373 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GantryAssembly_URDF.SLDASM/meshes/ZBar.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ZBar_Joint"
+    type="prismatic">
+    <origin
+      xyz="0 0.51796 0"
+      rpy="0 0 0" />
+    <parent
+      link="LeftUpright" />
+    <child
+      link="ZBar" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.5"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="GrasperBase">
+    <inertial>
+      <origin
+        xyz="-0.028605 0.017479 3.0418E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.26347" />
+      <inertia
+        ixx="8.1922E-05"
+        ixy="-4.6116E-22"
+        ixz="-1.6378E-21"
+        iyy="0.00012733"
+        iyz="-2.6012E-23"
+        izz="9.9473E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GantryAssembly_URDF.SLDASM/meshes/GrasperBase.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89412 0.91373 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GantryAssembly_URDF.SLDASM/meshes/GrasperBase.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="GrasperBase"
+    type="prismatic">
+    <origin
+      xyz="0.0286049999998313 -0.0348000000000001 -0.0419850000000004"
+      rpy="0 0 0" />
+    <parent
+      link="ZBar" />
+    <child
+      link="GrasperBase" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.2"
+      upper="0.2"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="LeftGrasper">
+	<contact>
+      <friction_anchor/>
+      <stiffness value="30000.0"/>
+      <damping value="1000.0"/>
+      <spinning_friction value="1.0"/>
+      <lateral_friction value="10"/>
+    </contact>
+    <inertial>
+      <origin
+        xyz="0.0079584 -0.005516 4.0088E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.32377" />
+      <inertia
+        ixx="0.0001606"
+        ixy="1.9853E-06"
+        ixz="-8.7326E-21"
+        iyy="0.00016454"
+        iyz="2.2032E-20"
+        izz="0.00015702" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GantryAssembly_URDF.SLDASM/meshes/LeftGrasper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89412 0.91373 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GantryAssembly_URDF.SLDASM/meshes/LeftGrasper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LeftGrasperJoint"
+    type="continuous">
+    <origin
+      xyz="-0.0413250000000025 0.0134499999999999 0"
+      rpy="0 0 0" />
+    <parent
+      link="GrasperBase" />
+    <child
+      link="LeftGrasper" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1"
+      upper="0"
+      effort="0"
+      velocity="0" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="RightGrasper">
+	<contact>
+      <friction_anchor/>
+      <stiffness value="30000.0"/>
+      <damping value="1000.0"/>
+      <spinning_friction value="1.0"/>
+      <lateral_friction value="10.0"/>
+    </contact>
+    <inertial>
+      <origin
+        xyz="-0.0085205 -0.0046005 3.0896E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.32377" />
+      <inertia
+        ixx="0.00016021"
+        ixy="-1.5024E-06"
+        ixz="8.1051E-21"
+        iyy="0.00016493"
+        iyz="-6.2917E-20"
+        izz="0.00015702" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GantryAssembly_URDF.SLDASM/meshes/RightGrasper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89412 0.91373 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GantryAssembly_URDF.SLDASM/meshes/RightGrasper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RightGrasperJoint"
+    type="continuous">
+    <origin
+      xyz="-0.0158850000000049 0.0134499999999997 0"
+      rpy="0 0 0.110997010491433" />
+    <parent
+      link="GrasperBase" />
+    <child
+      link="RightGrasper" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1"
+      effort="0"
+      velocity="0" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="RightUpright">
+    <inertial>
+      <origin
+        xyz="0.28158 0.35631 -0.041985"
+        rpy="0 0 0" />
+      <mass
+        value="1.4886" />
+      <inertia
+        ixx="0.056019"
+        ixy="4.5192E-18"
+        ixz="-1.7188E-19"
+        iyy="0.00025146"
+        iyz="1.2808E-18"
+        izz="0.056166" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GantryAssembly_URDF.SLDASM/meshes/RightUpright.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GantryAssembly_URDF.SLDASM/meshes/RightUpright.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RightUprightJoint"
+    type="fixed">
+    <origin
+      xyz="0 -0.0419850000000002 0"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="RightUpright" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="-0.5"
+      upper="0.5"
+      effort="0"
+      velocity="0" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="BasePlate">
+    <inertial>
+      <origin
+        xyz="6.7623E-17 0.00191 -0.25718"
+        rpy="0 0 0" />
+      <mass
+        value="2.7286" />
+      <inertia
+        ixx="0.06016"
+        ixy="-2.384E-20"
+        ixz="-5.0162E-18"
+        iyy="0.12031"
+        iyz="8.2033E-36"
+        izz="0.06016" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GantryAssembly_URDF.SLDASM/meshes/BasePlate.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GantryAssembly_URDF.SLDASM/meshes/BasePlate.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="BasePlateJoint"
+    type="prismatic">
+    <origin
+      xyz="0 -0.257175 0.05914"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="BasePlate" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.3"
+      upper="0.3"
+      effort="0"
+      velocity="0" />
+    <dynamics
+      damping="0"
+      friction="3" />
+  </joint>
+  <link
+    name="ObjectBase">
+    <inertial>
+      <origin
+        xyz="2.3079E-50 0.01 3.0679E-19"
+        rpy="0 0 0" />
+      <mass
+        value="0.03817" />
+      <inertia
+        ixx="3.4194E-06"
+        ixy="-1.1064E-38"
+        ixz="5.1616E-54"
+        iyy="4.2942E-06"
+        iyz="-3.4866E-39"
+        izz="3.4194E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GantryAssembly_URDF.SLDASM/meshes/ObjectBase.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GantryAssembly_URDF.SLDASM/meshes/ObjectBase.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ObjectBaseJoint"
+    type="fixed">
+    <origin
+      xyz="0 0.00382 -0.25718"
+      rpy="0 0 0" />
+    <parent
+      link="BasePlate" />
+    <child
+      link="ObjectBase" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+</robot>

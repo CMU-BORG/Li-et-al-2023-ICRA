@@ -1,0 +1,21 @@
+FileName	CreateDate	Duration	SourceImageWidth	SourceImageHeight	CameraModelName	ShutterSpeed	FNumber	ISO	ClosestDatalog	Perspective	Qualitative Brightness	Successfully grasped object	Successfully completed motion	Other Notes	Keep for Data?
+P1060061_v1.MP4	2022:09:08 21:13:12.852	0:01:04	3840	2160	DC-FZ80	1/60	8	80	08_Sep_2022_21_16_28.txt	Front On	Slightly dark	Yes	Yes		Yes
+P1060062_v2.MP4	2022:09:08 21:15:04.695	0:01:51	3840	2160	DC-FZ80	1/60	8	80	08_Sep_2022_21_19_18.txt	Front On	Slightly dark	Yes	Yes		Yes
+P1060063_v3.MP4	2022:09:08 21:17:18.110	0:02:08	3840	2160	DC-FZ80	1/60	8	80	08_Sep_2022_21_21_38.txt	Front On	Slightly dark	Yes	Yes		Yes
+P1060078.MP4	2022:09:08 22:10:13.046	0:02:04	1920	1080	DC-FZ80	1/60	5	100	08_Sep_2022_22_12_14.txt	Front On	Fairly Bright	Yes	Yes		Yes
+P1060079.MP4	2022:09:08 22:15:41.169	0:02:11	1920	1080	DC-FZ80	1/60	5	100	08_Sep_2022_22_20_04.txt	Front On	Fairly Bright	Yes	Yes		Yes
+P1060080.MP4	2022:09:08 22:26:13.802	0:01:45	1920	1080	DC-FZ80	1/60	5	100	08_Sep_2022_22_30_04.txt	Angle Top Down View	Fairly Bright	Yes	Yes		Yes
+P1060081.MP4	2022:09:08 22:28:14.236	0:02:04	1920	1080	DC-FZ80	1/60	5	100	08_Sep_2022_22_32_31.txt	Angle Top Down View	Fairly Bright	Yes	Yes	Camera shaked a bit because I accidentally hit it	Yes
+P1060082.MP4	2022:09:08 22:31:16.812	0:02:23	1920	1080	DC-FZ80	1/60	5	100	08_Sep_2022_22_35_45.txt	Angle Top Down View	Fairly Bright	Yes	Yes		Yes
+P1060091.MP4	2022:09:08 22:36:54.333	0:02:20	1920	1080	DC-FZ80	1/125	8	100	08_Sep_2022_22_41_18.txt	Angle Top Down View	Not as bright as previously	Yes	Yes		Yes
+P1060092.MP4	2022:09:08 22:39:24.786	0:02:12	1920	1080	DC-FZ80	1/125	8	100	08_Sep_2022_22_43_43.txt	Angle Top Down View	Not as bright as previously	Yes	Yes		Yes
+P1060093.MP4	2022:09:08 22:41:45.170	0:02:15	1920	1080	DC-FZ80	1/125	8	100	08_Sep_2022_22_46_05.txt	Angle Top Down View	Not as bright as previously	Yes	Yes		Yes
+P1060094.MP4	2022:09:08 22:47:48.110	0:02:03	3840	2160	DC-FZ80	1/30	8	100	08_Sep_2022_22_52_03.txt	Angle Bottom Down View	Fairly Bright	Yes	Yes		Yes
+P1060095.MP4	2022:09:08 22:50:11.073	0:01:59	3840	2160	DC-FZ80	1/30	8	100	08_Sep_2022_22_54_23.txt	Angle Bottom Down View	Fairly Bright	Yes	Yes		Yes
+P1060096.MP4	2022:09:08 22:52:24.915	0:02:03	3840	2160	DC-FZ80	1/30	8	100	08_Sep_2022_22_56_44.txt	Angle Bottom Down View	Fairly Bright	Yes	Yes		Yes
+MVI_0356.MOV	2022:09:08 11:42:06.61	0:01:55	1920	1080	Canon EOS Rebel T7	1/50	5.6	100	08_Sep_2022_23_42_50.txt	Angle Bottom Down View	Fairly Bright	Yes	Yes	Video cut off the bottom of the cube in the target location.	Yes
+MVI_0357.MOV	2022:09:08 11:44:17.44	0:02:09	1920	1080	Canon EOS Rebel T7	1/50	5.6	100	08_Sep_2022_23_45_14.txt	Angle Bottom Down View	Fairly Bright	Yes	Yes	Video cut off the bottom of the cube in the target location.	Yes
+MVI_0358.MOV	2022:09:08 11:46:34.04	0:02:19	1920	1080	Canon EOS Rebel T7	1/50	5.6	100	08_Sep_2022_23_47_48.txt	Angle Bottom Down View	Fairly Bright	Yes	Yes	Video cut off the bottom of the cube in the target location.	Yes
+MVI_0359.MOV	2022:09:08 11:51:47.31	0:01:57	1920	1080	Canon EOS Rebel T7	1/60	5.6	100	08_Sep_2022_23_52_40.txt	Front On	Fairly Bright	Yes	Yes		Yes
+MVI_0360.MOV	2022:09:08 11:53:57.03	0:02:01	1920	1080	Canon EOS Rebel T7	1/60	5.6	100	08_Sep_2022_23_54_52.txt	Front On	Fairly Bright	Yes	Yes		Yes
+MVI_0361.MOV	2022:09:08 11:56:21.00	0:02:00	1920	1080	Canon EOS Rebel T7	1/60	5.6	100	08_Sep_2022_23_57_16.txt	Front On	Fairly Bright	Yes	Yes		Yes
